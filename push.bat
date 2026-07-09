@@ -20,3 +20,4 @@ git push -u origin main --force
 
 echo Done!
 pause
+push.bat
