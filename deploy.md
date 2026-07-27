@@ -85,10 +85,11 @@ Since we added an execution block to `main.py` (which runs Uvicorn on port 8081)
 
 Run this command inside the `reybarberai` directory:
 ```bash
-pm2 start main.py --name "reybarber-api" --interpreter ./venv/bin/python
+pm2 start main.py --name "reybarberAI-api" --interpreter ./venv/bin/python
 ```
 
-*(Alternatively, you can run Uvicorn directly via PM2: `pm2 start "./venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8081" --name "reybarber-api"`)*
+*(Alternatively, you can run Uvicorn directly via PM2: `pm2 start "./venv/bin/python -m uvicorn main:app --host 0.0.0.0 --port 8081" --name "reybarberAI-api"`)*
+
 
 ## 8. Save PM2 and Setup Auto-Start
 To ensure your FastAPI application restarts automatically if the EC2 instance reboots:
@@ -108,6 +109,6 @@ To ensure your FastAPI application restarts automatically if the EC2 instance re
 
 ## Useful PM2 Commands for Maintenance
 - Check the status of your app: `pm2 status`
-- View live application logs: `pm2 logs reybarber-api`
-- Restart the app (e.g., after pulling new git updates): `pm2 restart reybarber-api`
-- Stop the app: `pm2 stop reybarber-api`
+- View live application logs: `pm2 logs reybarberAI-api`
+- Restart the app (e.g., after pulling new git updates): `pm2 restart reybarberAI-api`
+- Stop the app: `pm2 stop reybarberAI-api`
