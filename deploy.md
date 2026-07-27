@@ -9,6 +9,30 @@ This guide walks you through deploying your FastAPI application to an AWS EC2 in
 
 ---
 
+## Connecting to Your EC2 Instance
+
+Before setting up the server, configure the permissions of your private key file (`barber.pem`) and connect to your EC2 instance.
+
+### 1. Set Permissions for the Private Key
+On your local machine (Linux/macOS, Git Bash, or WSL/PowerShell), restrict the permissions of your private key:
+```bash
+chmod 400 barber.pem
+```
+
+### 2. SSH into the EC2 Instance
+Connect to the server using either the public DNS or public IP:
+
+- **Via Public DNS:**
+  ```bash
+  ssh -i "barber.pem" ubuntu@ec2-13-48-206-147.eu-north-1.compute.amazonaws.com
+  ```
+- **Via Public IP:**
+  ```bash
+  ssh -i "barber.pem" ubuntu@13.48.206.147
+  ```
+
+---
+
 ## 1. System Update
 First, update the package list and upgrade existing packages:
 ```bash

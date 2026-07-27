@@ -168,3 +168,6 @@ cython_debug/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Private keys / PEM files
+barber.pem
