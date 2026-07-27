@@ -158,7 +158,6 @@ cython_debug/
 .idea/
 
 # VS Code
-.vscode/
 
 # OS generated files
 .DS_Store
@@ -171,3 +170,7 @@ Thumbs.db
 
 # Private keys / PEM files
 barber.pem
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
